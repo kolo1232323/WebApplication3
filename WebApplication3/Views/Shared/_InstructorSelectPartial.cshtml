@@ -1,0 +1,15 @@
+﻿@model IEnumerable<WebApplication3.Models.ApplicationUser>
+
+@{
+    ViewBag.Title = "Select Instructor";
+}
+
+
+<div>
+    @foreach (var role in Model)
+    {
+        <div><button onclick='getElementById("selectin").value = "@role.Id"'>@role.FullName</button></div>
+    }
+</div>
+
+
